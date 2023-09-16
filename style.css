@@ -1,0 +1,133 @@
+/* Common styles for all devices */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.h1t {
+    height: 100px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+    border: 3px solid black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+img:hover {
+    transition: all ease 1s;
+    transform: scale(1.05);
+}
+
+.chocolate-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.chocolate-option {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.chocolate-option label {
+    display: block;
+}
+
+.cmd {
+    background-color: whitesmoke;
+    width: auto;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-price {
+    display: flex;
+    background-color: grey;
+    height: 90px;
+    width: 200px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.chocolate-option input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+.chocolate-option label {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    gap: 8px;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    img {
+        height: auto;
+        max-width: 100%;
+        width: auto;
+    }
+
+    .chocolate-option {
+        width: 45%;
+        /* Adjust as needed for tablet screens */
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    img {
+        height: auto;
+        max-width: 100%;
+        width: auto;
+    }
+
+    .chocolate-option {
+        width: 100%;
+        /* Full width on mobile */
+    }
+}
+
+/* Laptop/desktop styles */
+@media (min-width: 1025px) {
+    /* You can add specific styles for larger screens here if needed */
+}
